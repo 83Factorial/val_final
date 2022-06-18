@@ -15,6 +15,7 @@
 //setTimeout( function() { next(); }, 2000);
 function next(){
   document.getElementById("boton_video").style.opacity = "0.5";
+  console.log("para ver si funciona")
 }
 
 setTimeout( function() { next(); }, 2000);
