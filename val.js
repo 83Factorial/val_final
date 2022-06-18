@@ -8,6 +8,19 @@
 //  	  clearInterval(i);
 //  }; });
 
+//function next(){
+//  location.replace("./lien2.html")
+//}
+//
+//setTimeout( function() { next(); }, 2000);
+function next(){
+  document.getElementById("boton_video").style.opacity = "0.5";
+}
+
+setTimeout( function() { next(); }, 2000);
+
+
+
 //variables para las decisiones
 var dec_1;
 var dec_2;
