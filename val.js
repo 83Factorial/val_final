@@ -14,11 +14,10 @@
 //
 //setTimeout( function() { next(); }, 2000);
 function next(){
-  document.getElementById("boton_video").style.opacity = "0.5";
-  console.log("para ver si funciona")
-}
+  location.replace("./lien2.html");
+};
 
-setTimeout( function() { next(); }, 2000);
+setTimeout( function() { next(); }, 6000);
 
 
 

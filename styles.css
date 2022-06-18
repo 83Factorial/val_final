@@ -411,16 +411,16 @@
 	position: absolute;
 	height: 300px;
 	float: left;
-	margin-left: 20%;
-	bottom: 41.5%;
+	margin-left: 20.5em;
+	bottom: 23.3em;
 }
 
 #img_fabian{
 	position: absolute;
 	height: 300px;
 	float: left;
-	margin-left: 61%;
-	bottom: 41.5%;
+	margin-left: 61em;
+	bottom: 23.3em;
 }
 
 /*boton and_elec*/
