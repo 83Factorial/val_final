@@ -890,7 +890,7 @@
 	left: 35px;
 }
 
-
+/*botones para la decision 1*/
 /*boton de decision izquierda*/
 .deci_t {
 	display: inline-flex;
@@ -921,7 +921,7 @@
 .deci_t.cinco span {
 	transition: .4s ease-in-out all;
 	position: absolute;
-	left: 34%;
+	left: 5.2em;
 }
 
 .deci_t.cinco .icono {
@@ -941,15 +941,15 @@
 }
 
 .deci_t.cinco:hover .icono {
-	left: calc(60% - 70px);
+	left: calc(56% - 70px);
 	opacity: 1;
 }
 
-.deci_t	.cinco:hover span {
-	left: 100px;
+.deci_t.cinco:hover span {
+	left: 4.5em;
 }
 
-/*boton de decision derecha*/
+
 .deci_f {
 	display: inline-flex;
 	max-width: 15em;
@@ -959,7 +959,7 @@
 	height: 80px;
 	background-color: #000000;
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: 500;
 	font-family: 'Lora', 'serif';
 	border: none;
@@ -979,7 +979,7 @@
 .deci_f.cinco span {
 	transition: .4s ease-in-out all;
 	position: absolute;
-	left: 34%;
+	left: 3.1em;
 }
 
 .deci_f.cinco .icono {
@@ -999,15 +999,15 @@
 }
 
 .deci_f.cinco:hover .icono {
-	left: calc(60% - 70px);
+	left: calc(90% - 70px);
 	opacity: 1;
 }
 
 .deci_f.cinco:hover span {
-	left: 100px;
+	left: 2.2em;
 }
 
-
+/*grid para la decision 6*/
 .decision_6 {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
@@ -1020,16 +1020,176 @@
 	.b_2 { grid-area: 4 / 4 / 5 / 5; }
 	.b_3 { grid-area: 4 / 6 / 5 / 7; }
 
-.b_1st{
-	top: 300%;
-	content: wenas;
-	font-size: 5px;
+/*boton izquierda*/
+.b_1st {
+	display: inline-flex;
+	max-width: 18em;
+	align-items: center;
+	justify-content: center;
+	width: 18em;
+	height: 7em;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
 }
 
-.b_2st{
-	top: 300%;
+.b_1st span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
 }
 
-.b_3st{
-	top: 300%;
+.b_1st.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 13%;
+}
+
+.b_1st.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.b_1st.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.b_1st.cinco:hover .icono {
+	left: calc(105% - 70px);
+	opacity: 1;
+}
+
+.b_1st.cinco:hover span {
+	left: 9%;
+}
+
+/*boton centro*/
+.b_2st {
+	display: inline-flex;
+	max-width: 18em;
+	align-items: center;
+	justify-content: center;
+	width: 18em;
+	height: 7em;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.b_2st span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.b_2st.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 18%;
+}
+
+.b_2st.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.b_2st.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.b_2st.cinco:hover .icono {
+	left: calc(100% - 70px);
+	opacity: 1;
+}
+
+.b_2st.cinco:hover span {
+	left: 12%;
+}
+
+/*boton derecha*/
+.b_3st {
+	display: inline-flex;
+	max-width: 18em;
+	align-items: center;
+	justify-content: center;
+	width: 18em;
+	height: 7em;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.b_3st span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.b_3st.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 10%;
+}
+
+.b_3st.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.b_3st.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.b_3st.cinco:hover .icono {
+	left: calc(110% - 70px);
+	opacity: 1;
+}
+
+.b_3st.cinco:hover span {
+	left: 8%;
 }

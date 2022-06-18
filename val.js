@@ -86,11 +86,11 @@ function decision_6_3 (){
 //decision 7
 function decision_7_t (){
   dec_6 = true;
-  location.replace("./final.html");
+  location.replace("./final1.html");
 };
 function decision_7_f (){
   dec_6 = false;
-  location.replace("./final1.html");
+  location.replace("./final.html");
 };
 
 //funcion para mostrar el final

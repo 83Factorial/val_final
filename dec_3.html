@@ -11,15 +11,26 @@
 
 <body>
     <p id="texto_normal">¿Vas a tomar otro trago?</p>
-    
     <div class="parent">
         <div class="div_fab_1">
-            <input id="decision_t" type="button" value="opcion 1" onclick="decision_3_t();"/> 
+            <a class="deci_t cinco" onclick="decision_3_t()">
+                <div class="icono">
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                    <span class="material-icons">arrow_forward_ios</span>
+                </div>
+                <span>Sí, mejor para<br>que se callen.</span>
+            </a>
         </div>
+        
         <div class="div_fab_2">
-            <input id="decision_f" type="button" value="opcion 2" onclick="decision_3_f();" />
+            <a class="deci_f cinco" onclick="decision_3_f()">
+                <div class="icono">
+                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+                    <span class="material-icons">arrow_forward_ios</span>
+                </div>
+                <span>No, ya tuve<br> suficiente.</span>
+            </a>
         </div>
     </div>
-
 </body>
 </html>
