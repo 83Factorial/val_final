@@ -1,0 +1,16 @@
+#decision_t {
+	background-color: #000;
+	color: white;
+	align-items: center;
+	width: 100px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+#decision_f {
+	background-color: #000;
+	color: white;
+	align-items: center;
+	width: 100px;
+	height: 50px;
+}

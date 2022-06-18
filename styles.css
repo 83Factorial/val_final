@@ -1,0 +1,1035 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+
+/*formato de display de video*/
+#ana {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+#body { 
+  background-color: white;
+  font-family: 'Lora', serif;
+}
+
+#texto_normal{
+	font-family: 'Lora', serif;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	font-size: 35px;
+	margin: auto;
+	width: 100%;
+}
+/*texto 1*/
+#texto_1{
+	max-width: 70%;
+	font-family: 'Lora', serif;
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	font-size: 35px;
+	margin: auto;
+	margin-left: 14.9%;
+	width: 100%;
+}
+/*texto 2*/
+#texto_2{
+	max-width: 70%;
+	font-family: 'Lora', serif;
+	text-align: center;
+	position: absolute;
+	top: 35%;
+	font-size: 35px;
+	margin: auto;
+	margin-left: 14.9%;
+	width: 100%;
+}
+
+
+/*texto and_elec
+		and_a_elec
+*/
+#texto_and_elec{
+	max-width: 70%;
+	font-family: 'Lora', serif;
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	font-size: 35px;
+	margin: auto;
+	margin-left: 14.9%;
+	width: 100%;
+}
+
+/*texto and_a_4*/
+#texto_and_a_4{
+	max-width: 70%;
+	font-family: 'Lora', serif;
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	font-size: 35px;
+	margin: auto;
+	margin-left: 14.9%;
+	width: 100%;
+}
+
+/*boton estanda para siguiente*/
+.boton {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 34%;
+}
+
+.boton.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton.cinco:hover .icono {
+	left: calc(60% - 70px);
+	opacity: 1;
+}
+
+.boton.cinco:hover span {
+	left: 100px;
+}
+
+
+/*grid para ubicar botones*/
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+ }
+  
+.grid-container > div {
+	grid-area: 5 / 3 / 6 / 4;
+}
+  
+
+/*definicion de ubicacion de botones*/
+.parent {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+}
+	
+.div1 { grid-area: 7 / 3 / 8 / 4; }
+.div_andrea { grid-area: 6 / 2 / 7 / 3; }
+.div_fabian { grid-area: 6 / 4 / 7 / 5; }
+.div_fab_1 { grid-area: 7 / 2 / 8 / 3; }
+.div_fab_2 { grid-area: 7 / 4 / 8 / 5; }
+.div_img_a { grid-area: 5 / 2 / 6 / 3; }
+.div_img_f { grid-area: 5 / 4 / 6 / 5; }
+
+
+/*grid para botones bebidas*/
+.coctelito {
+	display: grid;
+	grid-template-columns: repeat(9, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	}
+	
+.beer { grid-area: 2 / 3 / 3 / 4; }
+.coctel { grid-area: 2 / 5 / 3 / 6; }
+.coke { grid-area: 2 / 7 / 3 / 8; }
+
+
+/*configuracion para imagenes de ofnis*/
+.ofnis {
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	}
+	
+	.vestido { grid-area: 2 / 3 / 3 / 4; }
+	.jeans { grid-area: 2 / 6 / 3 / 7; }
+
+.dress {
+	margin-top: 12%;
+	background-color: white;
+	border: white;
+}
+.dress:hover{
+	background-color: white;
+	scale: 102%;
+}
+
+/*texto para los vetuarios*/
+#texto_vest{
+	font-family: 'Lora', serif;
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	font-size: 35px;
+	margin: auto;
+	margin-left: 15%;
+	max-width: 70%;
+	width: 100%;
+}
+
+/*configuracion para los botones bebidas*/
+.cerveza{
+    border: 1px solid #000;
+	border-radius: 10px;
+	background-color: white;
+}
+.cerveza:hover{
+	scale: 105%;
+	background-color: white;
+}
+
+/*boton que aparece tras terminar el video (falta el tiempo)*/
+.boton_video {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_video span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_video span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 34%;
+}
+
+.boton_video .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_video:hover {
+	background: #000000;
+	color: white;
+}
+
+.boton_video:hover .icono {
+	left: calc(60% - 70px);
+	opacity: 1;
+}
+
+.boton_video:hover span {
+	left: 100px;
+}
+
+/*botones para la desicion de fabian*/
+.boton_fab {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 120%;
+	height: 80px;
+	background-color: #000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_fab span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_fab.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 20%;
+}
+
+.boton_fab.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_fab.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_fab.cinco:hover .icono {
+	left: calc(80% - 50px);
+	opacity: 1;
+}
+
+.boton_fab.cinco:hover span {
+	left: 60px;
+}
+
+
+/*boton para la decision con imagenes*/
+.boton_img {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 120%;
+	height: 100px;
+	background-color: #000;
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_img span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_img.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 39%;
+}
+
+.boton_img.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_img.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_img.cinco:hover .icono {
+	left: calc(45% - 50px);
+	opacity: 1;
+}
+
+.boton_img.cinco:hover span {
+	left: 120px;
+}
+
+
+/*imagenes de andrea y fabian*/
+#img_andrea{
+	position: absolute;
+	height: 300px;
+	float: left;
+	margin-left: 20%;
+	bottom: 41.5%;
+}
+
+#img_fabian{
+	position: absolute;
+	height: 300px;
+	float: left;
+	margin-left: 61%;
+	bottom: 41.5%;
+}
+
+/*boton and_elec*/
+.boton_elec1 {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_elec1 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_elec1.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 30%;
+}
+
+.boton_elec1.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_elec1.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_elec1.cinco:hover .icono {
+	left: calc(70% - 70px);
+	opacity: 1;
+}
+
+.boton_elec1.cinco:hover span {
+	left: 70px;
+}
+
+/*boton elec2*/
+.boton_elec2 {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_elec2 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_elec2.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 25%;
+}
+
+.boton_elec2.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_elec2.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_elec2.cinco:hover .icono {
+	left: calc(80% - 70px);
+	opacity: 1;
+}
+
+.boton_elec2.cinco:hover span {
+	left: 65px;
+}
+
+
+/*boton and_a_elec1*/
+.boton_and_a_elec1 {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 120%;
+	min-width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_and_a_elec1 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_and_a_elec1.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 24%;
+}
+
+.boton_and_a_elec1.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_and_a_elec1.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_and_a_elec1.cinco:hover .icono {
+	left: calc(80% - 70px);
+	opacity: 1;
+}
+
+.boton_and_a_elec1.cinco:hover span {
+	left: 65px;
+}
+
+/*boton and_a_elec2*/
+.boton_and_a_elec2 {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_and_a_elec2 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_and_a_elec2.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 30%;
+}
+
+.boton_and_a_elec2.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_and_a_elec2.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_and_a_elec2.cinco:hover .icono {
+	left: calc(70% - 70px);
+	opacity: 1;
+}
+
+.boton_and_a_elec2.cinco:hover span {
+	left: 70px;
+}
+
+/*botones and_a_4_1*/
+.boton_and_a_4_1 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 120%;
+	height: 80px;
+	background-color: #000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_and_a_4_1 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_and_a_4_1.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 33%;
+}
+
+.boton_and_a_4_1.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_and_a_4_1.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_and_a_4_1.cinco:hover .icono {
+	left: calc(55% - 50px);
+	opacity: 1;
+}
+
+.boton_and_a_4_1.cinco:hover span {
+	left: 95px;
+}
+
+/*botones and_a_4_2*/
+.boton_and_a_4_2 {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 120%;
+	height: 80px;
+	background-color: #000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_and_a_4_2 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_and_a_4_2.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 20%;
+}
+
+.boton_and_a_4_2.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_and_a_4_2.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_and_a_4_2.cinco:hover .icono {
+	left: calc(80% - 50px);
+	opacity: 1;
+}
+
+.boton_and_a_4_2.cinco:hover span {
+	left: 60px;
+}
+
+
+/*boton and_b_12_1*/
+.boton_and_b_12_1 {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 21px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_and_b_12_1 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_and_b_12_1.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 30%;
+}
+
+.boton_and_b_12_1.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_and_b_12_1.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_and_b_12_1.cinco:hover .icono {
+	left: calc(71% - 70px);
+	opacity: 1;
+}
+
+.boton_and_b_12_1.cinco:hover span {
+	left: 78px;
+}
+
+/*boton and_b_12_2*/
+.boton_and_b_12_2 {
+	display: inline-flex;
+	max-width: 15em;
+	min-width: 100%;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 21px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_and_b_12_2 span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_and_b_12_2.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 17%;
+}
+
+.boton_and_b_12_2.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_and_b_12_2.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.boton_and_b_12_2.cinco:hover .icono {
+	left: calc(94% - 70px);
+	opacity: 1;
+}
+
+.boton_and_b_12_2.cinco:hover span {
+	left: 35px;
+}
+
+
+/*boton de decision izquierda*/
+.deci_t {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.deci_t span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.deci_t.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 34%;
+}
+
+.deci_t.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.deci_t.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.deci_t.cinco:hover .icono {
+	left: calc(60% - 70px);
+	opacity: 1;
+}
+
+.deci_t	.cinco:hover span {
+	left: 100px;
+}
+
+/*boton de decision derecha*/
+.deci_f {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: #000000;
+	color: white;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.deci_f span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.deci_f.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 34%;
+}
+
+.deci_f.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.deci_f.cinco:hover {
+	background: #000000;
+	color: white;
+	opacity: 1;
+}
+
+.deci_f.cinco:hover .icono {
+	left: calc(60% - 70px);
+	opacity: 1;
+}
+
+.deci_f.cinco:hover span {
+	left: 100px;
+}
+
+
+.decision_6 {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 0px;
+	grid-row-gap: 0px;
+	}
+	
+	.b_1 { grid-area: 4 / 2 / 5 / 3; }
+	.b_2 { grid-area: 4 / 4 / 5 / 5; }
+	.b_3 { grid-area: 4 / 6 / 5 / 7; }
+
+.b_1st{
+	top: 300%;
+	content: wenas;
+	font-size: 5px;
+}
+
+.b_2st{
+	top: 300%;
+}
+
+.b_3st{
+	top: 300%;
+}
