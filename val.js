@@ -14,10 +14,8 @@
 //
 //setTimeout( function() { next(); }, 2000);
 function next(){
-  location.replace("./lien2.html");
+  location.replace("./ind_cap.html");
 };
-
-setTimeout( function() { next(); }, 6000);
 
 
 

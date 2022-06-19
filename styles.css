@@ -1193,3 +1193,17 @@
 .b_3st.cinco:hover span {
 	left: 8%;
 }
+
+/*caracteristacas para los backgrounds*/
+
+#index_b{
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
