@@ -1194,6 +1194,66 @@
 	left: 8%;
 }
 
+/*boton de siguiente para el primer video*/
+
+.boton_back_bl {
+	display: inline-flex;
+	max-width: 15em;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 80px;
+	background-color: white;
+	color: black;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: 'Lora', 'serif';
+	border: none;
+	cursor: pointer;
+	transition: .3s ease all;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+}
+
+.boton_back_bl span {
+	position: relative;
+	z-index: 2;
+	transition: .3s ease all;
+}
+
+.boton_back_bl.cinco span {
+	transition: .4s ease-in-out all;
+	position: absolute;
+	left: 34%;
+}
+
+.boton_back_bl.cinco .icono {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	left: -40px;
+	transition: .3s ease-in-out all;
+	opacity: 0;
+}
+
+.boton_back_bl.cinco:hover {
+	background: white;
+	color: black;
+	opacity: 1;
+}
+
+.boton_back_bl.cinco:hover .icono {
+	left: calc(60% - 70px);
+	opacity: 1;
+}
+
+.boton_back_bl.cinco:hover span {
+	left: 100px;
+}
+
+
 /*caracteristacas para los backgrounds*/
 
 #index_b{
@@ -1206,4 +1266,12 @@
 	top: 0;
 	bottom: 0;
 	z-index: -1;
+}
+
+#an_1cap{
+	background-color: #000;
+}
+
+#an_3cap{
+	background-color: #ffff9d;
 }

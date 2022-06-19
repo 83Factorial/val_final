@@ -13,9 +13,12 @@
 //}
 //
 //setTimeout( function() { next(); }, 2000);
-function next(){
-  location.replace("./ind_cap.html");
-};
+
+
+
+//function next(){
+//  location.replace("./ind_cap.html");
+//};
 
 
 
