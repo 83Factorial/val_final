@@ -188,6 +188,7 @@
 
 
 /*configuracion para imagenes de ofnis*/
+
 .ofnis {
 	display: grid;
 	grid-template-columns: repeat(8, 1fr);

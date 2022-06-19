@@ -5,25 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./val.js"></script>
 </head>
-<link rel="stylesheet" href="./styles.css">
 <body>
 
     <video id="ana" autoplay>
         <source src="https://video.wixstatic.com/video/0ae1e7_197b8c7ec9984dd1a6f67c843a3b7ff1/1080p/mp4/file.mp4" type="video/mp4">
     </video>
 
-    <div class="parent">
-        <div class="div1">
-            <a class="boton cinco" href="and_a_2.html">
-                <div class="icono">
-                    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-                    <span class="material-icons">arrow_forward_ios</span>
-                </div>
-                <span>Siguiente</span>
-            </a>
-        </div>
-    </div>
+    <script>
+        function next(){
+        location.replace("./and_a_1cap.html");
+        };
+        setTimeout( function() { next(); }, 49300);
+    </script>
+
 </body>
   
 </html>
