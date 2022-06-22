@@ -46,21 +46,21 @@ function decision_1_f (){
 //decision 2
 function decision_2_t (){
   dec_2 = window.sessionStorage.setItem("dec2", 1);
-  location.replace("./dec_3.html");
+  location.replace("./n_2a.html");
 };
 function decision_2_f (){
   dec_2 = window.sessionStorage.setItem("dec2", 0);
-  location.replace("./dec_3.html");
+  location.replace("./n_2b.html");
 };
 
 //decision 3
 function decision_3_t (){
   dec_3 = window.sessionStorage.setItem("dec3", 1);
-  location.replace("./dec_4.html");
+  location.replace("./n_3.html");
 };
 function decision_3_f (){
   dec_3 = window.sessionStorage.setItem("dec3", 0);
-  location.replace("./dec_4.html");
+  location.replace("./n_3.html");
 };
 
 //decision 4
