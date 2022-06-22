@@ -86,15 +86,15 @@ function decision_5_f (){
 //decision 6
 function decision_6_1 (){
   dec_6 = window.sessionStorage.setItem("dec6", 1);
-  location.replace("./6_3.html");
+  location.replace("./n_6a.html");
 };
 function decision_6_2 (){
   dec_6 = window.sessionStorage.setItem("dec6", 2);
-  location.replace("./6_3.html");
+  location.replace("./n_6b.html");
 };
 function decision_6_3 (){
   dec_6 = window.sessionStorage.setItem("dec6", 3);
-  location.replace("./6_3.html");
+  location.replace("./n_6c.html");
 };
 
 //decision 7
